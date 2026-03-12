@@ -24,6 +24,6 @@ do{
     }else if(   userNumber>systemGenerateNumber){
         console.log("Too High!!Try again")}
 }
-while(){
-
+while(userNumber!=systemGenerateNumber){
+    console.log("Congratulations!! You guessed the number")
 }
