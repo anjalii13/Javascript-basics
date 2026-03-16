@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Mark Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+  
+
+     <div class="container w-100 rounded p-4 mt-5" style="background-color: #b3b7bc;height: 300px;">
+        <h1 class="text-center mb-3">Filter Even Odd Numbers</h1>
+        <div class="container">
+            <input type="text" name="" id="inputNumber" placeholder="Enter numbers"
+                class="rounded p-2 w-50 mb-3 border border-secondary">
+            <button class="btn btn-primary ms-4 p-2" onclick="addNumber()">Add Numbers</button>
+            <button class="btn btn-primary ms-4 p-2" onclick="evenNum()">Show Even</button>
+            <button class="btn btn-primary ms-4 p-2" onclick="oddNum()">Show Odd</button>
+            <button class="btn btn-primary ms-4 p-2" onclick="clearAll()">Clear</button>
+        </div>
+        <div class="container" id="result">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
