@@ -13,6 +13,8 @@ function addNumber(){
     let number=document.getElementById("inputNumber").value
     filterNumber.push(parseInt(number))
     console.log(filterNumber)
+      document.getElementById("result").innerHTML = filterNumber;
+
 }
 function evenNum(){
  let evenNumber=filterNumber.filter(n=>n%2==0)
@@ -23,9 +25,11 @@ function evenNum(){
 function oddNum(){
     let oddNumber=filterNumber.filter(n=>n%2!=0)
     console.log(oddNumber)
-    document.getElementById("result").innerHTML="Odd numbers are" + oddNumber
+    document.getElementById("result").innerHTML="Odd numbers are :" + oddNumber
 }
 function clearAll(){
     filterNumber=[]
     console.log(filterNumber)
+      document.getElementById("inputNumber").value = "";
+       document.getElementById("result").textContent = "";
 }
